@@ -1,5 +1,5 @@
 import React from "react";
-import prisma from "@/lib/prisma"; // 👈 fix 1: import prisma
+import prisma from "@/lib/prisma";
 
 const page = async () => {
   const notes = await prisma.notes.findMany();
